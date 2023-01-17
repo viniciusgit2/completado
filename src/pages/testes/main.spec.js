@@ -11,17 +11,18 @@ describe("spote",()=>{
 describe("smoke test",()=>{
 it(`should call fetch function`),()=>{
     const fetchstub=Sinon.stub(global,"fetch")
-    const artist=search();
+ 
     expect(fetchstub).to.have.been.calledOnce
 }
-it(`should exist the search method`),()=>{
+it(`should receiv correct the url to fetch`),()=>{
    
-
+    const searchartist=search(`https://api.spotify.com/v1/me.`);
+    expect(fetchstub).to.have.exist
 }
-it(`should exist the search method`),()=>{
+it(`should receive correct url to be fetch`),()=>{
 
-  
-  
+  const searchartist=search(`kkk,artist`)
+  expect(fetchstub).to.been.calledWith("https://api.spotify.com/v1/me")
 }
 it(`should exist the search method`),()=>{
     
