@@ -1,6 +1,6 @@
 {
   "name": "my-webpack-project",
-  "version": "1.5.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -33,6 +33,7 @@
   "devDependencies": {
     "@types/chai": "^4.3.4",
     "@types/mocha": "^10.0.1",
+    "@types/sinon": "^10.0.13",
     "@webpack-cli/generators": "^3.0.1",
     "autoprefixer": "^10.4.13",
     "chai": "^4.3.7",
@@ -43,8 +44,6 @@
     "mocha": "^10.2.0",
     "nicky": "^2.8.1",
     "node-fetch": "^3.3.0",
-    "postcss": "^8.4.21",
-    "postcss-loader": "^7.0.2",
     "prettier": "^2.8.2",
     "sinon": "^15.0.1",
     "sinon-chai": "^3.7.0",
@@ -59,7 +58,7 @@
     "webpack-dev-server": "^4.11.1",
     "workbox-webpack-plugin": "^6.5.4"
   },
-  "description": "spote-html",
+  "description": "My webpack project",
   "main": "index.js",
   "author": "vinicius-patel-fin",
   "license": "MIT"
