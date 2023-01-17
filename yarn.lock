@@ -2086,7 +2086,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/chai@npm:^4.3.4":
+"@types/chai@npm:*, @types/chai@npm:^4.3.4":
   version: 4.3.4
   resolution: "@types/chai@npm:4.3.4"
   checksum: 571184967beb03bf64c4392a13a7d44e72da9af5a1e83077ff81c39cf59c0fda2a5c78d2005084601cf8f3d11726608574d8b5b4a0e3e9736792807afd926cd0
@@ -2338,7 +2338,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/sinon@npm:^10.0.13":
+"@types/sinon-chai@npm:^3.2.9":
+  version: 3.2.9
+  resolution: "@types/sinon-chai@npm:3.2.9"
+  dependencies:
+    "@types/chai": "*"
+    "@types/sinon": "*"
+  checksum: 3238ee2e3f64d0fc3e3d08a0d69f1edf062500e58814cbf9898ab6b28a8acfa01734069a431e7cff2b0890d8fa2782103b2c011b247520885a50f8928e395681
+  languageName: node
+  linkType: hard
+
+"@types/sinon-stub-promise@npm:^2.1.7":
+  version: 2.1.7
+  resolution: "@types/sinon-stub-promise@npm:2.1.7"
+  dependencies:
+    "@types/sinon": "*"
+  checksum: add57f54a13357b88d753721f345d4bf9f98b18e3676aede8a7b089fb5d53f11d762fb06440db96459a1d26b04b691ce2590e7405f31cda5b9e3de364bac74fd
+  languageName: node
+  linkType: hard
+
+"@types/sinon@npm:*, @types/sinon@npm:^10.0.13":
   version: 10.0.13
   resolution: "@types/sinon@npm:10.0.13"
   dependencies:
@@ -7643,6 +7662,8 @@ __metadata:
     "@types/react": 18.0.26
     "@types/react-dom": 18.0.10
     "@types/sinon": ^10.0.13
+    "@types/sinon-chai": ^3.2.9
+    "@types/sinon-stub-promise": ^2.1.7
     "@webpack-cli/generators": ^3.0.1
     autoprefixer: ^10.4.13
     chai: ^4.3.7
