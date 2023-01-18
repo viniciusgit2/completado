@@ -1,47 +1,79 @@
-import {expect,} from "chai"
-import { search ,searchplaylist,searchalbum,seartrack,searchartist } from "../spote/main"
+import {expect, should,} from "chai"
+import { search ,searchplaylist,searchalbum,seartrack } from "../spote/main"
+import sinonChai from "sinon-chai"
 import sinonStubPromise from "sinon-stub-promise"
-import sinonchai from "sinon-chai"
 import Sinon from "sinon"
 import fetch from "node-fetch"
-chai.use(sinonchai)
-sinonStubPromise(Sinon)
-global.fetch=require(node-fetch)
-describe("spote",()=>{
-describe("smoke test",()=>{
-it(`should call fetch function`),()=>{
-    context(`expect to passing`),()=>{
-        const searchartist=search(`https://api.spotify.com/v1/me`);
-        expect(fetchstub).to.have.exist
-        const fetchstub=Sinon.stub(global,"fetch")
-        expect(fetchstub).to.have.been.calledOnce
-    }
-    context(`expect to passing`),()=>{
-   
-    it(`should receiv correct the url to fetch`),()=>{
-   
-        const searchartist=search(`https://api.spotify.com/v1/me`);
-        expect(fetchstub).to.have.exist
-   
-}
-it(`should receive correct url to be fetch`),()=>{
+import { global } from "styled-jsx/css"
 
-    const searchartist=search(`kkk,artist`)
-    expect(fetchstub).to.been.calledWith(`https://api.spotify.com/v1/me`)
-    fetchstub.restore(`https://api.spotify.com/v1/me`)
-  }
-}
 
-it(`should exist the search method`),()=>{
-    const searchalbum=search(`kkk,album`)
-    expect(fetchstub).to.been.calledWith(`https://api.spotify.com/v1/me`)
+const fetchedstub =sinon.stub(global,`fetch`)
+const artist=search()
+describe( `spote`),()=>{
+   describe( `smoke-test`),()=>{
+   }
+
+
+
+describe( `generic search`),()=>{
+    let fetchedstub;
+    beforeEach(()=>{fetchedstub=Sinon.stub(global,`fetch`)});
+    afterEach(()=>{fetchedstub.restore();
+    })
+
+it( `should call fetched function`),()=>{
+
+
+    const artist=search()
+    expect().to.have.been.calledOnce
+
+    
 }
-it(`should exist the search method`),()=>{
-   
- 
-}}
-}
-)
+it (`should call fetch function the correct url`,()=>{
+context(`passing type`),()=>{
+const fetchedstub =sinon.stub(global,`fetch`)  
+const artist=search(`kkk`,`artist`)
+expect(fetchedstub).to.have.been
+.calledWith(`	https://api.spotify.com/v1/me`)
+fetchedstub.restore();
 
 }
-)
+const fetchedstub =sinon.stub(global,`fetch`)  
+
+const album=search(`kkk`,`album`)
+expect(fetchedstub).to.have.been
+.calledWith(`	https://api.spotify.com/v1/me`)
+fetchedstub.restore();
+
+
+})
+context(`passing more types`),()=>{
+  
+    const artistaandalbum=search(`kkk`,[`album`,`artist`])
+    expect(fetchedstub).to.have.been
+    .calledWith(`	https://api.spotify.com/v1/me&type=artist,album`)
+    fetchedstub.restore();
+
+}
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
