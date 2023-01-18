@@ -1,10 +1,17 @@
+import { data } from "autoprefixer"
+
 export const search=(query,type)=>
 fetch( `https://api.spotify.com/${query}&${type}`)
+.then(data=>data.json())
+export const searchalbum=()=>{query}
+search(query,`album`)
 
-export const searchalbum=()=>{}
-export const searchartist=()=>
-fetch( `https://api.spotify.com/v1/me`)
-export const searchplaylist=()=>{}
-export const track=()=>
-fetch(`https://api.spotify.com/v1/me`)
-//copie do artist(meu test)
+export const searchartist=()=>{query}
+search(query,`artist`)
+export const searchplaylist=()=>{query}
+search(query,`playlist`)
+
+export const track=()=>{query}
+search(query,`track`)
+
+

@@ -6103,7 +6103,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^8.0.3":
+"husky-init@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "husky-init@npm:8.0.0"
+  dependencies:
+    husky: ^8.0.0
+  bin:
+    husky-init: lib/bin.js
+  checksum: ccee853be5c28dcbe1f7498ec8b466c58e81adfe27b3d96d6ebf15bb4ceb83ae74b9e7179be261a1cb364f00cf5fb77dac388d26aa74d38d23d4db55ef7e2f09
+  languageName: node
+  linkType: hard
+
+"husky@npm:^8.0.0":
   version: 8.0.3
   resolution: "husky@npm:8.0.3"
   bin:
@@ -7710,7 +7721,8 @@ __metadata:
     fetched: ^0.7.5
     gitignore: ^0.7.0
     html-webpack-plugin: ^5.5.0
-    husky: ^8.0.3
+    husky: ^8.0.0
+    husky-init: ^8.0.0
     mini-css-extract-plugin: ^2.7.2
     mocha: ^10.2.0
     next: 13.1.2
@@ -7724,6 +7736,7 @@ __metadata:
     react-dom: 18.2.0
     sinon: ^15.0.1
     sinon-chai: ^3.7.0
+    sinon-stub-promise: ^4.0.0
     stub: ^0.3.2
     style-loader: ^3.3.1
     tailwindcss: ^3.2.4
@@ -9792,6 +9805,13 @@ __metadata:
     chai: ^4.0.0
     sinon: ">=4.0.0"
   checksum: 49a353d8eb66cc6db35ac452f6965c72778aa090d1f036dd1e54ba88594b1c3f314b1a403eaff22a4e314f94dc92d9c7d03cbb88c21d89e814293bf5b299964d
+  languageName: node
+  linkType: hard
+
+"sinon-stub-promise@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "sinon-stub-promise@npm:4.0.0"
+  checksum: 916d2213ddadcace510718e10b73bdb47cc0e6c588d93a8cf6ca3469b9eb46fc236743cf226bd0c8a57a7d06652f58ab67ad234c52f733c35d1d215f8687651f
   languageName: node
   linkType: hard
 
