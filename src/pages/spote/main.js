@@ -1,5 +1,5 @@
 import { data } from "autoprefixer"
-
+import{api_url} from "./config"
 export const search=(query,type)=>
 fetch( `https://api.spotify.com/${query}&${type}`)
 .then(data=>data.json())
